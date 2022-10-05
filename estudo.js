@@ -12,3 +12,19 @@ function escreva(){
     document.write(tabuada + " x 9 = " + (tabuada*9) + "<br>");
     document.write(tabuada + " x 10 = " + (tabuada*10) + "<br>");
 }
+
+function minhaTabuada(){
+    for(let i = 10; i >= 1; i--){
+        document.write("Tabuada do " + i + "<br>");
+        for(let j = 1; j <= 10; j++){
+            document.write(i + " x " + j + " = " + (j*i) + "<br>");
+        }
+        document.write("<br>");       
+    }
+}
+
+function cubo(){
+    for(let i = 20; i >= 2; i--){
+        document.write("O cubo de "+i+" é "+i+" x "+i+" x "+i+" = "+(i*i*i)+"<br>");
+    }
+}
