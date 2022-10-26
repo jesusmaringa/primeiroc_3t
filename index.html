@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,9 +8,20 @@
     <title>Primeiro C</title>
     <script src="estudo.js"></script>
 </head>
+
 <body>
-    <button onclick="escreva()">Clique aqui</button>
-    <button onclick="minhaTabuada()"> Tabuada </button>
-    <button onclick="cubo()"> Calcula Cubo </button>
+    <div class="calc">
+        
+        <span id="totalGeral">Total: 0,00</span><br>
+
+        Capital: <input id="valor" placeholder="R$" type="text"><br>
+        Juros mensais: <input id="juros" placeholder="% mềs"  type="text"><br>
+        N. meses: <input id="meses" placeholder="tempo" type="text"><br>
+        <button onclick="mat()">enviar</button><br>
+
+        <span id="tempo">Mês a Mês</span>
+
+    </div>
 </body>
+
 </html>
