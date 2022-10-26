@@ -34,7 +34,7 @@ function moeda(atual){
 function mat(){  
     let v = document.getElementById("valor").value;
     let j = document.getElementById("juros").value;
-    let t = document.getElementById("messes").value;
+    let t = document.getElementById("meses").value;
   
     if(!Number(v)){
         alert("O Capitual deve ser numérico.");
@@ -58,7 +58,9 @@ function mat(){
     for(let i=1; i<=t; i++){
         r = v * (1+(j/100));
         v = r;
-        document.write("Mês " + i + " = " + moeda(r) + "<br>");
+     // document.write("Mês " + i + " = " + moeda(r) + "<br>");
+     
     }
-    document.write("Resultado " + moeda(r));
+    document.getElementById("totalGeral").innerHTML = "Total: "+moeda(r);
+   // document.write("Resultado " + moeda(r));
 }
